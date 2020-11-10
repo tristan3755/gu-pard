@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+/******************************************header***************************************/
+
+header{
+
+    position: fixed;
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color:whitesmoke;
+    margin-top: 40px;
+    opacity: 0.7;
+    z-index: 10;
+    animation:fade-in 5s;
+}
+
+@keyframes fade-in{
+
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.7;
+    }
+}
+
+header p{
+    color: black;
+    font-family: 'Acme', sans-serif;
+
+}
+
+
+nav>*{
+
+    text-decoration: none;
+    color: black;
+
+
+}
+
+nav>*:hover{
+
+    
+    color: #7D1B24;
+
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Acme', sans-serif;
+    width: 35vw;
+
+}
+
+
+
+/******************************************sect1************************************/
+
+#sect1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/helmet.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.contener2{
+height: 100vh;
+width: 55%;
+
+}
+
+
+.contener1{
+
+    position: absolute;
+    background-color:black;
+    height: 100vh;
+    width: 45%;
+    opacity: 0.2;
+    filter: blur(5px);
+
+}
+
+.contenu1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 45%;
+
+}
+
+.divTitre{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+    
+}
+
+.titre{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-family: 'Lobster', cursive;
+}
+
+.sousTitre{
+    color: white;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+.divTitre p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Acme', sans-serif;
+    width: 400px;
+}
+
+
+/*************************************************sect2***********************************************/
+
+#sect2{
+
+    min-height: 100vh;
+    width: 100%;
+
+
+}
