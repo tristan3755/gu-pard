@@ -138,13 +138,13 @@ nav {
   background-image: url(./images/fond1.jpg);
   background-position: top;
   background-size: cover;
-
 }
 
 .notreSport {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   min-height: 90vh;
   width: 90%;
@@ -153,64 +153,70 @@ nav {
   background-size: cover;
 }
 
-
-.image{
-width: 45%;
-height: 90vh;
-
+.image {
+  width: 600px;
+  height: 90vh;
 }
 
-.text{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 45%;
-    min-height: 90vh;
-    
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 600px;
+  min-height: 90vh;
 }
 
-.flag,.flag2,.flag3{
-    color:white;
+.flag,
+.flag2,
+.flag3 {
+  color: white;
 }
 
-.flag{
-    font-size: 50px;
-    margin-bottom: 5px;
-    margin-top: 85px;
-    font-family: "Lobster", cursive;
+.flag {
+  font-size: 50px;
+  margin-bottom: 5px;
+  margin-top: 85px;
+  font-family: "Lobster", cursive;
 }
 
-.flag2{
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-family: "Lobster", cursive;
+.flag2 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-family: "Lobster", cursive;
 }
 
-
-.flag3{
-    text-align: justify;
-    font-size: 15px;
-    margin-bottom: 100px;
-    width:80%;
-    font-family: "Acme", sans-serif;
+.flag3 {
+  text-align: justify;
+  font-size: 15px;
+  margin-bottom: 100px;
+  width: 80%;
+  font-family: "Acme", sans-serif;
 }
 
-
-.button{
-   
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    width: 200px;
-    height: 50px;
-    font-family: "Acme", sans-serif;
-    border: white 3px solid;
+.button {
+  background-color: black;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  transition: 2s;
+  border: white 3px solid;
 }
 
-.button>*{
+.button a {
+  text-decoration: none;
+  color: white;
+  font-family: "Acme", sans-serif;
+  padding: 50px;
+}
 
-    
+.button:hover {
+  cursor: pointer;
+  border: darkred solid 3px;
+  font-style: italic;
+  transition: 2s;
+  width: 220px;
+  height: 70px;
+  transform-origin: right;
 }
