@@ -156,6 +156,9 @@ nav {
 .image {
   width: 600px;
   height: 90vh;
+  background-image: url(./images/ballon.jpg);
+  background-size: cover;
+  filter:grayscale(80%);
 }
 
 .text {
